@@ -51,3 +51,11 @@ Overall, the results show that factors beyond smoking contribute to COPD progres
 - R  
 - tidyverse (dplyr, ggplot2)  
 
+---
+
+## **Data Availability**
+The dataset used in this project comes from the COPDGene Study and was provided for academic use. 
+Because the original data is not publicly available and contains sensitive medical information, it 
+cannot be shared in this repository. All analysis code is included, and a synthetic example dataset 
+can be added upon request to illustrate the data structure.
+
