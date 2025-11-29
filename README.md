@@ -47,9 +47,21 @@ Overall, the results show that factors beyond smoking contribute to COPD progres
 
 ---
 
-## **Technologies**
-- R  
-- tidyverse (dplyr, ggplot2)  
+## Technologies Used
+
+This project was built using:
+
+### **R Programming Language**
+Used for data cleaning, analysis, visualization, and statistical modeling.
+
+### **R Packages**
+- **jsonlite** – used to load and parse JSON data  
+- **rvest** – used for web scraping and HTML extraction  
+- **ggplot2** – used to create histograms, scatterplots, and boxplots  
+
+### **Tools**
+- **RStudio** – primary development environment  
+- **Git & GitHub** – version control and project hosting
 
 ---
 
