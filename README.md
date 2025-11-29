@@ -50,12 +50,4 @@ Overall, the results show that factors beyond smoking contribute to COPD progres
 ## **Technologies**
 - R  
 - tidyverse (dplyr, ggplot2)  
-- R Markdown  
 
----
-
-## **How to Run**
-1. Download or clone the repository  
-2. Open `analysis.Rmd` in RStudio  
-3. Install required packages  
-4. Knit or run the file
