@@ -47,23 +47,6 @@ Overall, the results show that factors beyond smoking contribute to COPD progres
 
 ---
 
-## **Repository Structure**
-copd-spirometry-analysis/
-│
-├─ README.md
-├─ analysis.Rmd
-├─ data/
-│ └─ sample_data.csv
-├─ figs/
-│ ├─ fev1_distribution.png
-│ ├─ fev1_fvc_plot.png
-│ └─ model_results.png
-└─ results/
-└─ model_summary.txt
-
-
----
-
 ## **Technologies**
 - R  
 - tidyverse (dplyr, ggplot2)  
