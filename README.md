@@ -1,73 +1,48 @@
-# **COPD Lung Function Analysis**
+# COPD Lung Function Analysis
 
-## **Overview**
-This project looks at how different factors relate to long-term lung function in people at risk for COPD. The main outcome is **FEV1 Phase 2**, a follow-up lung function measurement collected about five years after the first visit.
+## Overview
 
-The dataset includes demographic information, smoking history, imaging features, and baseline spirometry results. I used R to clean the data, explore patterns, and build simple models to see which variables were most strongly linked to changes in FEV1 over time.
+This project examines how demographic characteristics, respiratory conditions, smoking history, and imaging based lung measurements relate to long term lung function in individuals at risk for Chronic Obstructive Pulmonary Disease. The primary outcome is forced expiratory volume in one second measured at follow up, referred to as FEV1 Phase 2, which was collected approximately five years after baseline assessment.
 
----
+The goal of the analysis is to identify which factors are most strongly associated with long term lung function and to evaluate whether imaging based measures explain variation beyond smoking history alone.
 
-## **Data**
-The dataset includes:
-- Age, sex, race, height, weight  
-- Smoking status and years smoked  
-- Imaging measures (emphysema %, gas trapping, lung volumes, density metrics)  
-- Baseline spirometry (FEV1, FVC, FEV1/FVC ratio)  
-- Follow-up FEV1 (~5 years later)
+## Data
 
-A small synthetic sample is included in the `data/` folder.
+The data used in this project originate from the COPDGene Study and were provided for academic research use. The dataset integrates demographic information, smoking history, imaging based lung measurements, and spirometry outcomes.
 
----
+Because the original data contain sensitive medical information, they cannot be shared publicly. This repository therefore focuses on documenting the full analysis workflow, including data cleaning, visualization, and statistical modeling.
 
-## **Methods**
+## Methods
 
-### **Data Preparation**
-- Cleaned and merged datasets  
-- Removed incomplete rows  
-- Log-transformed heavily skewed variables  
+The analysis was conducted in R and includes the following components:
 
-### **Exploratory Analysis**
-- Histograms for distributions  
-- Boxplots to compare groups  
-- Scatterplots for continuous relationships  
+Data cleaning and merging across sources  
+Removal of incomplete observations  
+Log transformation of right skewed variables  
+Exploratory data analysis using histograms, boxplots, and scatterplots  
+Bootstrapping to estimate uncertainty in group comparisons  
+Linear regression modeling to identify predictors of long term lung function  
 
-### **Modeling**
-- Bootstrapping to estimate uncertainty  
-- Linear regression to identify predictors of long-term FEV1  
-- All analysis done in R using tidyverse packages  
+## Key Findings
 
----
+Long term lung function differed substantially across several respiratory conditions  
+Individuals with asthma, bronchitis attacks, chronic bronchitis, emphysema, or COPD tended to have lower follow up lung function  
+Age and duration of smoking were negatively associated with long term FEV1  
+Imaging based measures such as gas trapping, lung volumes, and lung density were strongly associated with follow up lung function  
+Imaging features often explained more variation in long term lung function than basic demographic variables  
 
-## **Findings**
-- Participants with **asthma**, **chronic bronchitis**, or **a history of bronchitis attacks** tended to have lower FEV1 Phase 2.  
-- Variables such as **age**, **years smoked**, **gas trapping**, **inspiratory lung volume**, and **lung density** were strongly related to long-term FEV1.  
-- Imaging features often explained more variation in lung function decline than basic demographic variables.
-
-Overall, the results show that factors beyond smoking contribute to COPD progression. Combining demographic, clinical, and imaging data can help identify individuals at greater risk for reduced lung function over time.
-
----
+These findings highlight that factors beyond smoking contribute meaningfully to COPD progression.
 
 ## Technologies Used
 
-This project was built using:
+R programming language  
+tidyverse for data manipulation and visualization  
+ggplot2 for exploratory graphics  
+jsonlite and rvest for data ingestion  
+RStudio for development  
+Git and GitHub for version control  
 
-### **R Programming Language**
-Used for data cleaning, analysis, visualization, and statistical modeling.
+## Full Report
 
-### **R Packages**
-- **jsonlite** – used to load and parse JSON data  
-- **rvest** – used for web scraping and HTML extraction  
-- **ggplot2** – used to create histograms, scatterplots, and boxplots  
-
-### **Tools**
-- **RStudio** – primary development environment  
-- **Git & GitHub** – version control and project hosting
-
----
-
-## **Data Availability**
-The dataset used in this project comes from the COPDGene Study and was provided for academic use. 
-Because the original data is not publicly available and contains sensitive medical information, it 
-cannot be shared in this repository. All analysis code is included, and a synthetic example dataset 
-can be added upon request to illustrate the data structure.
-
+A complete written report, including figures, statistical results, and interpretation, is available here:
+https://www.linkedin.com/in/kimberly-empringham/details/projects/1167545046/multiple-media-viewer/?profileId=ACoAAEmks78Bg-8vupZjyLI4lN5gbGAWb0X3z54&treasuryMediaId=1768357075654
